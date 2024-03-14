@@ -28,6 +28,7 @@ class Router
 
         // $auth = $_SESSION['login'] ?? null;
 
+        //Proteger router
         $currentUrl = strtok($_SERVER["REQUEST_URI"], "?" ?? "/");
         $method = $_SERVER['REQUEST_METHOD'];
 
