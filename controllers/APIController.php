@@ -29,7 +29,7 @@ class APIController {
                 "servicioId" => $idServicio
             ];
             $citaServicio = new CitaServicio($args);
-            $citaServicio->guardar();
+            $resultado = $citaServicio->guardar();
          }
 
          // Retornamos una respuesta
